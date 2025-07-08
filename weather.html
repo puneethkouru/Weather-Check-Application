@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Live Weather Checker</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #90dffe, #38a3d1);
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    input {
+      padding: 12px;
+      width: 200px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: 12px 18px;
+      background-color: #1e81b0;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+      background: rgba(0,0,0,0.2);
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>☁️ Live Weather Checker</h1>
+  <p>Type your city to get real-time weather updates!</p>
+
+  <input type="text" id="locationBox" placeholder="e.g., Bengaluru">
+  <button onclick="fetchWeather()">Show Weather</button>
+
+  <div id="result"></div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
